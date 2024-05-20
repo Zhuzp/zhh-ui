@@ -1,12 +1,23 @@
 {
-  "name": "examples",
+  "name": "@zhh-ui/examples",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.3.2",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "antd": "^5.17.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.1",
+    "vite": "^5.2.11",
+    "@zhh-ui/components": "workspace:^1.0.0"
+  }
 }

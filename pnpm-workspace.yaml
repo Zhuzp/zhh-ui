@@ -1,3 +1,7 @@
 packages:
-    - 'packages/**'
-    - 'examples'
+  # all packages in direct subdirs of packages/
+  - 'packages/*'
+  # all packages in subdirs of components/
+  - 'examples/**'
+  # exclude packages that are inside test directories
+  - '!**/test/**'

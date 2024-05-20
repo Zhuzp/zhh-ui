@@ -1,17 +1,30 @@
 {
   "compilerOptions": {
-    "baseUrl": "./",
-    "target": "esnext",
-    "module": "commonjs",
-    "jsx": "react",
-    "declaration": true,
-    "declarationDir": "lib",
-    "strict": true,
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
     "esModuleInterop": true,
-    "resolveJsonModule": true
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react",
+    "baseUrl": "./src",
+    "paths": {
+      "@pages/*": ["pages/*"],
+      "@components/*": ["components/*"],
+      "@stores/*": ["stores/*"],
+      "@services/*": ["services/*"],
+      "@utils/*": ["utils/*"]
+    }
   },
-  "include": ["packages", "global.d.ts"],
+  "include": ["packages","examples"],
   "exclude": ["node_modules"]
+
 }
